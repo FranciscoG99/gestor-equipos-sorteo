@@ -19,7 +19,7 @@ body {
 }
 
 .titulo {
-    background-image: url(/imagenes/balones.icono.png);
+    background-image: url(../imagenes/balones.icono.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +94,7 @@ body {
 .futbol-btn {
     color: white;
     background-color: greenyellow;
-    background-image: url(/imagenes/futbol-icono.png);
+    background-image: url(../imagenes/futbol-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -109,7 +109,7 @@ body {
 
 .voley-btn {
     background-color: darkblue;
-    background-image: url(/imagenes/voley-icono.png);
+    background-image: url(../imagenes/voley-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -124,7 +124,7 @@ body {
 
 .basquet-btn {
     background-color: orange;
-    background-image: url(/imagenes/baloncesto-icono.png);
+    background-image: url(../imagenes/baloncesto-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -139,7 +139,7 @@ body {
 
 .hockey-btn {
     background-color: green;
-    background-image: url(/imagenes/hockey-icon.png);
+    background-image: url(../imagenes/hockey-icon.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -155,7 +155,7 @@ body {
 
 .handbol-btn {
     background-color: red;
-    background-image: url(/imagenes/balonmano-icono.png);
+    background-image: url(../imagenes/balonmano-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -170,7 +170,7 @@ body {
 
 .rugby-btn {
     background-color: burlywood;
-    background-image: url(/imagenes/rugby-icono.png);
+    background-image: url(../imagenes/rugby-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -185,7 +185,7 @@ body {
 
 .tenis-btn {
     background-color: yellow;
-    background-image: url(/imagenes/tenis-icono.png);
+    background-image: url(../imagenes/tenis-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -200,7 +200,7 @@ body {
 
 .padel-btn {
     background-color: blue;
-    background-image: url(/imagenes/padel-icono.png);
+    background-image: url(../imagenes/padel-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
@@ -215,7 +215,7 @@ body {
 
 .paleta-btn {
     background-color: gray;
-    background-image: url(/imagenes/paleta-icono.png);
+    background-image: url(../imagenes/paleta-icono.png);
     background-size: cover;
     filter: brightness(85%);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);

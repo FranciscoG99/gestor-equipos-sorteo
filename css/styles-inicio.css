@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: #32a8ba; */
+    background: #2980B9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a0e5fe, #6DD5FA, #2980B9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a0e5fe, #6DD5FA, #2980B9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.titulo {
+    background-image: url(/imagenes/balones.icono.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 40%; */
+}
+
+.titulo h1 {
+    color: #fdec00;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+
+.section-deportes-grid {
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.section-deportes-grid h2 {
+    color: black;
+}
+
+#linea-principal {
+    background-color: black;
+}
+
+.volver {
+    padding: 3px 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.volver:hover {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.deportes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    text-align: center;
+    place-items: center;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    /* box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.deporte-btn {
+    font-family: "Saira Stencil One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+    /* background-color: #007BFF; */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.futbol-btn {
+    color: white;
+    background-color: greenyellow;
+    background-image: url(/imagenes/futbol-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.futbol-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.voley-btn {
+    background-color: darkblue;
+    background-image: url(/imagenes/voley-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.voley-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.basquet-btn {
+    background-color: orange;
+    background-image: url(/imagenes/baloncesto-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.basquet-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.hockey-btn {
+    background-color: green;
+    background-image: url(/imagenes/hockey-icon.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+
+}
+
+.hockey-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.handbol-btn {
+    background-color: red;
+    background-image: url(/imagenes/balonmano-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.handbol-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.rugby-btn {
+    background-color: burlywood;
+    background-image: url(/imagenes/rugby-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.rugby-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.tenis-btn {
+    background-color: yellow;
+    background-image: url(/imagenes/tenis-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.tenis-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.padel-btn {
+    background-color: blue;
+    background-image: url(/imagenes/padel-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.padel-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.paleta-btn {
+    background-color: gray;
+    background-image: url(/imagenes/paleta-icono.png);
+    background-size: cover;
+    filter: brightness(85%);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+    border: solid 1px black;
+}
+
+.paleta-btn:hover {
+    filter: none;
+    border: solid 3px black;
+    box-shadow: none;
+}
+
+.seccion-deporte {
+    padding: 20px;
+}

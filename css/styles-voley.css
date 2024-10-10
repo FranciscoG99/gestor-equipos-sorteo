@@ -1,0 +1,201 @@
+#voley-seccion {
+    margin: 0;
+    padding: 10px;
+}
+
+.vVoley {
+    color: white;
+    background-color: #a30202;
+    border: 2px solid #6f0101;
+}
+
+.vVoley:hover {
+    background-color: #bd0202;
+}
+
+.container-voley {
+    color: white;
+    max-width: 800px;
+    border: solid 3px #000052;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: darkblue;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-voley h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.container-voley h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.linea-voley {
+    background-color: white;
+    margin: auto;
+    width: 40%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+#tipoPartidoVoley {
+    text-align: center;
+}
+
+.btn-partido-voley {
+    background-color: #f0f0f0;
+    border: 2px solid #420000;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-weight: 800;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-partido-voley:hover {
+    background-color: #ac0b0b;
+}
+
+.btn-partido-voley.selected {
+    background-color: #bd0202;
+    border: 2px solid #6f0101;
+    color: white;
+}
+
+#listaJugadoresVoley {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#jugadorVoley {
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid #6f0101;
+}
+
+#agregarJugadorVoley {
+    background-color: #a30202;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+#agregarJugador:active {
+    transform: translateY(1px);
+}
+
+/* Estilos para los divs de los jugadores */
+.jugadorVoley {
+    display: flex;
+    background-color: #bebb34;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    /* position: relative; */
+}
+
+.jugadorVoley span {
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de eliminar (la cruz "X") */
+.jugadorVoley .eliminar {
+    background-color: #cd0000;
+    color: white;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.jugadorVoley .eliminar:hover {
+    background-color: #c02020;
+    color: white;
+}
+
+.btn-sorteo-voley {
+    color: white;
+    background-color: #a30202;
+    border: 2px solid #6f0101;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 5px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sorteo-voley:active {
+    transform: translateY(3px);
+}
+
+#equiposVoley {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/634/900/non_2x/volleyball-court-top-view-illustration-vector.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 10px;
+    color: #fdec00;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1)
+}
+
+.equiposSorteadosVoley ul {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+.listaEquipo1Voley,
+.listaEquipo2Voley {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+#copiarContenidoVoley {
+    position: absolute;
+    bottom: 2px;
+    right: auto;
+    color: white;
+    background-color: #6f6f6f;
+    border: 2px solid #484848;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+#copiarContenidoVoley:hover {
+    background-color: #484848;
+}
+
+#iniciaVoley {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.nombreJugadoresVoley {
+    display: grid;
+    place-items: center;
+}

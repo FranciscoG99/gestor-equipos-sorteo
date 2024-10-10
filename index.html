@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/balones.icono.png">
+    <title>Gestor de Sorteos</title>
+    <link rel="stylesheet" href="css/styles-inicio.css">
+    <link rel="stylesheet" href="css/styles-futbol.css">
+    <link rel="stylesheet" href="css/styles-voley.css">
+    <script defer src="js/main-inicio.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/appVoley.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sección principal de selección de sorteos -->
+    <div class="titulo">
+        <h1>Gestor de equipos por sorteo</h1>
+    </div>
+<section id="sorteo-seleccion" class="section-deportes-grid">
+    <h2>Selecciona el tipo de sorteo</h2>
+    <div id="linea-principal" class="linea"></div>
+
+    <div class="deportes-grid">
+        <button class="deporte-btn futbol-btn" onclick="mostrarSeccion('futbol')">Fútbol</button>
+        <button class="deporte-btn voley-btn" onclick="mostrarSeccion('voley')">Vóley</button>
+        <button class="deporte-btn basquet-btn" onclick="mostrarSeccion('basquet')">Básquet</button>
+        <button class="deporte-btn hockey-btn" onclick="mostrarSeccion('hockey')">Hockey</button>
+        <button class="deporte-btn handbol-btn" onclick="mostrarSeccion('handbol')">Handbol</button>
+        <button class="deporte-btn rugby-btn" onclick="mostrarSeccion('rugby')">Rugby</button>
+        <button class="deporte-btn tenis-btn" onclick="mostrarSeccion('tenis')">Tenis</button>
+        <button class="deporte-btn padel-btn" onclick="mostrarSeccion('padel')">Pádel</button>
+        <button class="deporte-btn paleta-btn" onclick="mostrarSeccion('pelota')">Pelota Paleta</button>
+    </div>
+</section>
+    <!-- Sección de Fútbol -------------------------------------------->
+<div id="futbol-seccion" class="seccion-deporte" style="display: none;">
+    <button class="volver vFutbol" onclick="volver()">Volver</button>
+    <div class="container-futbol">
+        <h1>Gestor de Equipos de Fútbol</h1>
+        <div class="linea-futbol"></div>
+        <h2>Selecciona el tipo de partido:</h2>
+        <div id="tipoPartidoFutbol">
+            <button class="btn-partido-futbol" data-tipo="5">F5</button>
+            <button class="btn-partido-futbol" data-tipo="7">F7</button>
+            <button class="btn-partido-futbol" data-tipo="11">F11</button>
+        </div>
+
+        <!-- Formulario para ingresar los jugadores -->
+        <section class="nombreJugadoresFutbol">
+            <h2>Ingresa los nombres de los jugadores</h2>
+            <div id="formularioJugadoresFutbol">
+                <input type="text" id="jugadorFutbol" placeholder="Nombre del jugador">
+                
+                <button id="agregarJugadorFutbol">Agregar Jugador</button>
+            </div>
+
+            <!-- Lista de jugadores -->
+            <ul id="listaJugadoresFutbol"></ul>
+
+            <!-- Botón para sortear equipos -->
+            <button id="sortearEquiposFutbol" class="btn-sorteo-futbol">Sortear Equipos</button>
+        </section>
+
+        <!-- Mostrar los equipos generados -->
+        <h2>Equipos</h2>
+        <div id="equiposFutbol">
+            <div id="equipo1Futbol" class="equiposSorteados">
+                <h3>Equipo 1</h3>
+                <ul id="listaEquipo1Futbol"></ul>
+            </div>
+            <button id="copiarContenidoFutbol" style="display: none;">Copiar</button>
+            <div id="equipo2Futbol" class="equiposSorteados">
+                <h3>Equipo 2</h3>
+                <ul id="listaEquipo2Futbol"></ul>
+            </div>
+        </div>
+
+        <!-- Quién inicia el partido -->
+        <h2>Inicia el partido:</h2>
+        <p id="inicia"></p>
+
+    </div>
+</div>
+
+<!-- Sección de Vóley --------------------------------------------->
+<div id="voley-seccion" class="seccion-deporte" style="display: none;">
+    <button class="volver vVoley" onclick="volver()">Volver</button>
+        
+    <div class="container-voley">
+        <h1>Gestor de Equipos de Voley</h1>
+        <div class="linea-voley"></div>
+        <h2>Selecciona el tipo de partido:</h2>
+        <div id="tipoPartidoVoley">
+            <button class="btn-partido-voley" data-tipo-voley="6">3V3</button>
+            <button class="btn-partido-voley" data-tipo-voley="8">4V4</button>
+            <button class="btn-partido-voley" data-tipo-voley="12">6V6</button>
+        </div>
+
+        <!-- Formulario para ingresar los jugadores -->
+        <section class="nombreJugadoresVoley">
+            <h2>Ingresa los nombres de los jugadores</h2>
+            <div id="formularioJugadoresVoley">
+                <input type="text" id="jugadorVoley" placeholder="Nombre del jugador">
+                
+                <button id="agregarJugadorVoley">Agregar Jugador</button>
+            </div>
+
+            <!-- Lista de jugadores -->
+            <ul id="listaJugadoresVoley"></ul>
+
+            <!-- Botón para sortear equipos -->
+            <button id="sortearEquiposVoley" class="btn-sorteo-voley">Sortear Equipos</button>
+        </section>
+
+        <!-- Mostrar los equipos generados -->
+        <h2>Equipos</h2>
+        <div id="equiposVoley">
+            <div id="equipo1Voley" class="equiposSorteados">
+                <h3>Equipo 1</h3>
+                <ul id="listaEquipo1Voley"></ul>
+            </div>
+            <button id="copiarContenidoVoley" style="display: none;">Copiar</button>
+            <div id="equipo2Voley" class="equiposSorteados">
+                <h3>Equipo 2</h3>
+                <ul id="listaEquipo2Voley"></ul>
+            </div>
+        </div>
+
+        <!-- Quién inicia el partido -->
+        <h2>Inicia el partido:</h2>
+        <p id="iniciaVoley"></p>
+
+    </div>
+
+</div>
+
+<!-- Sección de Básquet -->
+<div id="basquet-seccion" class="seccion-deporte" style="display: none;">
+    <h2>Sorteo de Equipos para Básquet</h2>
+    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
+    <button onclick="volver()">Volver</button>
+</div>
+
+<!-- Sección de Hockey -->
+<div id="hockey-seccion" class="seccion-deporte" style="display: none;">
+    <h2>Sorteo de Equipos para Hockey</h2>
+    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
+    <button onclick="volver()">Volver</button>
+</div>
+
+<!-- Sección de Handbol -->
+<div id="handbol-seccion" class="seccion-deporte" style="display: none;">
+    <h2>Sorteo de Equipos para Handbol</h2>
+    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
+    <button onclick="volver()">Volver</button>
+</div>
+
+<!-- Sección de Rugby -->
+<div id="rugby-seccion" class="seccion-deporte" style="display: none;">
+    <h2>Sorteo de Equipos para Rugby</h2>
+    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
+    <button onclick="volver()">Volver</button>
+</div>
+
+<!-- Sección de Tenis -->
+<div id="tenis-seccion" class="seccion-deporte" style="display: none;">
+    <h2>Sorteo de Equipos para Tenis</h2>
+    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
+    <button onclick="volver()">Volver</button>
+</div>
+
+<!-- Sección de Pádel -->
+<div id="padel-seccion" class="seccion-deporte" style="display: none;">
+    <h2>Sorteo de Equipos para Pádel</h2>
+    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
+    <button onclick="volver()">Volver</button>
+</div>
+
+<!-- Sección de Pelota Paleta -->
+<div id="pelota-seccion" class="seccion-deporte" style="display: none;">
+    <h2>Sorteo de Equipos para Pelota Paleta</h2>
+    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
+    <button onclick="volver()">Volver</button>
+</div>
+
+</body>
+</html>

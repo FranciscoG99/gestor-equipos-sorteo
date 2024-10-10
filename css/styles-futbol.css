@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+#futbol-seccion {
+    margin: 0;
+    padding: 10px;
+}
+
+.vFutbol {
+    color: white;
+    background-color: #02a30a;
+    border: 2px solid #016f07;
+}
+
+.vFutbol:hover {
+    background-color: #4CAF50;
+}
+
+.container-futbol {
+    max-width: 800px;
+    border: solid 3px #003603;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ddda3d;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-futbol h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #003603;
+    margin-bottom: 10px;
+}
+
+.container-futbol h2 {
+    text-align: center;
+    color: #003603;
+    margin-bottom: 10px;
+}
+
+.linea-futbol {
+    background-color: #003603;
+    margin: auto;
+    width: 40%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+#tipoPartidoFutbol {
+    text-align: center;
+}
+
+.btn-partido-futbol {
+    background-color: #f0f0f0;
+    border: 2px solid #004203;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+    font-weight: 800;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-partido-futbol:hover {
+    background-color: #4CAF50;
+}
+
+.btn-partido-futbol.selected {
+    background-color: #02a30a;
+    border: 2px solid #016f07;
+    color: white;
+}
+
+#listaJugadoresFutbol {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#jugadorFutbol {
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid #016f07;
+}
+
+#agregarJugadorFutbol {
+    background-color: #02a30a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+#agregarJugador:active {
+    transform: translateY(1px);
+}
+
+/* Estilos para los divs de los jugadores */
+.jugadorFutbol {
+    display: flex;
+    background-color: #243890;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    /* position: relative; */
+}
+
+.jugadorFutbol span {
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de eliminar (la cruz "X") */
+.jugadorFutbol .eliminar {
+    background-color: #ff2c2c;
+    color: white;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.jugadorFutbol .eliminar:hover {
+    background-color: #c02020;
+    color: white;
+}
+
+.btn-sorteo-futbol {
+    color: white;
+    background-color: #02a30a;
+    border: 2px solid #016f07;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 5px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sorteo-futbol:active {
+    transform: translateY(3px);
+}
+
+#equiposFutbol {
+    background-image: url(https://c.wallhere.com/photos/f1/03/1920x1080_px_grass_Soccer_Pitches-719779.jpg!d);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 10px;
+    color: #fdec00;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1)
+}
+
+.equiposSorteados ul {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+#copiarContenidoFutbol {
+    position: absolute;
+    bottom: 2px;
+    right: auto;
+    color: white;
+    background-color: #6f6f6f;
+    border: 2px solid #484848;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+#copiarContenidoFutbol:hover {
+    background-color: #484848;
+}
+
+#inicia {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #003603;
+}
+
+.nombreJugadoresFutbol {
+    display: grid;
+    place-items: center;
+}

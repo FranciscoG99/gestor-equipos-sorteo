@@ -14,14 +14,15 @@
 }
 
 .container-voley {
-    color: white;
+    background-color: darkblue;
+    color: #be1c1c;
     max-width: 800px;
     border: solid 3px #000052;
     border-radius: 10px;
     margin: 0 auto;
     padding: 10px;
-    background-color: darkblue;
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
 .container-voley h1 {
@@ -48,6 +49,7 @@
 }
 
 .btn-partido-voley {
+    color: #420000;
     background-color: #f0f0f0;
     border: 2px solid #420000;
     padding: 10px 20px;
@@ -90,7 +92,7 @@
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
-#agregarJugador:active {
+#agregarJugadorVoley:active {
     transform: translateY(1px);
 }
 

@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css/styles-inicio.css">
     <link rel="stylesheet" href="css/styles-futbol.css">
     <link rel="stylesheet" href="css/styles-voley.css">
+    <link rel="stylesheet" href="css/styles-basquet.css">
     <script defer src="js/main-inicio.js"></script>
     <script defer src="js/app.js"></script>
     <script defer src="js/appVoley.js"></script>
+    <script defer src="js/appBasquet.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -37,7 +39,7 @@
         <button class="deporte-btn paleta-btn" onclick="mostrarSeccion('pelota')">Pelota Paleta</button>
     </div>
 </section>
-    <!-- Sección de Fútbol -------------------------------------------->
+    <!-- Sección de Fútbol ------------------------------------------------------------------------------------------------>
 <div id="futbol-seccion" class="seccion-deporte" style="display: none;">
     <button class="volver vFutbol" onclick="volver()">Volver</button>
     <div class="container-futbol">
@@ -87,7 +89,7 @@
     </div>
 </div>
 
-<!-- Sección de Vóley --------------------------------------------->
+<!-- Sección de Vóley ----------------------------------------------------------------------------------------------->
 <div id="voley-seccion" class="seccion-deporte" style="display: none;">
     <button class="volver vVoley" onclick="volver()">Volver</button>
         
@@ -139,49 +141,91 @@
 
 </div>
 
-<!-- Sección de Básquet -->
+<!-- Sección de Básquet ------------------------------------------------------------------------------------------------>
 <div id="basquet-seccion" class="seccion-deporte" style="display: none;">
-    <h2>Sorteo de Equipos para Básquet</h2>
-    <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
-    <button onclick="volver()">Volver</button>
+    <button class="volver vBasquet" onclick="volver()">Volver</button>
+    <div class="container-basquet">
+        <h1>Gestor de Equipos de Fútbol</h1>
+        <div class="linea-basquet"></div>
+        <h2>Selecciona el tipo de partido:</h2>
+        <div id="tipoPartidoBasquet">
+            <button class="btn-partido-basquet" data-tipo-basquet="3">3V3</button>
+            <button class="btn-partido-basquet" data-tipo-basquet="5">5V5</button>
+        </div>
+
+        <!-- Formulario para ingresar los jugadores -->
+        <section class="nombreJugadoresBasquet">
+            <h2>Ingresa los nombres de los jugadores</h2>
+            <div id="formularioJugadoresBasquet">
+                <input type="text" id="jugadorBasquet" placeholder="Nombre del jugador">
+                
+                <button id="agregarJugadorBasquet">Agregar Jugador</button>
+            </div>
+
+            <!-- Lista de jugadores -->
+            <ul id="listaJugadoresBasquet"></ul>
+
+            <!-- Botón para sortear equipos -->
+            <button id="sortearEquiposBasquet" class="btn-sorteo-basquet">Sortear Equipos</button>
+        </section>
+
+        <!-- Mostrar los equipos generados -->
+        <h2>Equipos</h2>
+        <div id="equiposBasquet">
+            <div id="equipo1Basquet" class="equiposSorteados">
+                <h3>Equipo 1</h3>
+                <ul id="listaEquipo1Basquet"></ul>
+            </div>
+            <button id="copiarContenidoBasquet" style="display: none;">Copiar</button>
+            <div id="equipo2Basquet" class="equiposSorteados">
+                <h3>Equipo 2</h3>
+                <ul id="listaEquipo2Basquet"></ul>
+            </div>
+        </div>
+
+        <!-- Quién inicia el partido -->
+        <h2>Inicia el partido:</h2>
+        <p id="iniciaBasquet"></p>
+
+    </div>
 </div>
 
-<!-- Sección de Hockey -->
+<!-- Sección de Hockey ------------------------------------------------------------------------------------->
 <div id="hockey-seccion" class="seccion-deporte" style="display: none;">
     <h2>Sorteo de Equipos para Hockey</h2>
     <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
     <button onclick="volver()">Volver</button>
 </div>
 
-<!-- Sección de Handbol -->
+<!-- Sección de Handbol ------------------------------------------------------------------------------------>
 <div id="handbol-seccion" class="seccion-deporte" style="display: none;">
     <h2>Sorteo de Equipos para Handbol</h2>
     <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
     <button onclick="volver()">Volver</button>
 </div>
 
-<!-- Sección de Rugby -->
+<!-- Sección de Rugby ------------------------------------------------------------------------------------->
 <div id="rugby-seccion" class="seccion-deporte" style="display: none;">
     <h2>Sorteo de Equipos para Rugby</h2>
     <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
     <button onclick="volver()">Volver</button>
 </div>
 
-<!-- Sección de Tenis -->
+<!-- Sección de Tenis ------------------------------------------------------------------------------------->
 <div id="tenis-seccion" class="seccion-deporte" style="display: none;">
     <h2>Sorteo de Equipos para Tenis</h2>
     <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
     <button onclick="volver()">Volver</button>
 </div>
 
-<!-- Sección de Pádel -->
+<!-- Sección de Pádel ------------------------------------------------------------------------------------->
 <div id="padel-seccion" class="seccion-deporte" style="display: none;">
     <h2>Sorteo de Equipos para Pádel</h2>
     <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->
     <button onclick="volver()">Volver</button>
 </div>
 
-<!-- Sección de Pelota Paleta -->
+<!-- Sección de Pelota Paleta ------------------------------------------------------------------------------------->
 <div id="pelota-seccion" class="seccion-deporte" style="display: none;">
     <h2>Sorteo de Equipos para Pelota Paleta</h2>
     <!-- Aquí puedes copiar el contenido del sorteo de fútbol y adaptarlo -->

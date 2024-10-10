@@ -1,61 +1,57 @@
-* {
-    box-sizing: border-box;
-}
-
-#futbol-seccion {
+#basquet-seccion {
     margin: 0;
     padding: 10px;
 }
 
-.vFutbol {
+.vBasquet {
     color: white;
-    background-color: #02a30a;
-    border: 2px solid #016f07;
+    background-color: #d25b00;
+    border: 2px solid #502200;
 }
 
-.vFutbol:hover {
-    background-color: #4CAF50;
+.vBasquet:hover {
+    background-color: #f16800;
 }
 
-.container-futbol {
+.container-basquet {
+    background-color: #ff9b00;
+    color: black;
     max-width: 800px;
-    border: solid 3px #003603;
+    border: solid 3px black;
     border-radius: 10px;
     margin: 0 auto;
     padding: 10px;
-    background-color: #ddda3d;
     box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.1);
+    /* text-shadow: 1px 1px 4px rgb(255, 123, 0); */
 }
 
-.container-futbol h1 {
+.container-basquet h1 {
     text-align: center;
     letter-spacing: 2px;
-    color: #003603;
     margin-bottom: 10px;
 }
 
-.container-futbol h2 {
+.container-basquet h2 {
     text-align: center;
-    color: #003603;
     margin-bottom: 10px;
 }
 
-.linea-futbol {
-    background-color: #003603;
+.linea-basquet {
+    background-color: black;
     margin: auto;
     width: 40%;
     height: 4px;
     border-radius: 5px;
 }
 
-#tipoPartidoFutbol {
+#tipoPartidoBasquet {
     text-align: center;
 }
 
-.btn-partido-futbol {
-    color: #004203;
+.btn-partido-basquet {
+    color: #502200;
     background-color: #f0f0f0;
-    border: 2px solid #004203;
+    border: 2px solid #502200;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -66,29 +62,30 @@
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.btn-partido-futbol:hover {
-    background-color: #4CAF50;
+.btn-partido-basquet:hover {
+    background-color: #ba5000;
 }
 
-.btn-partido-futbol.selected {
-    background-color: #02a30a;
-    border: 2px solid #016f07;
+.btn-partido-basquet.selected {
+    background-color: #d25b00;
+    border: 2px solid #502200;
     color: white;
 }
 
-#listaJugadoresFutbol {
+#listaJugadoresBasquet {
     display: flex;
     flex-wrap: wrap;
 }
 
-#jugadorFutbol {
+#jugadorBasquet {
     padding: 5px;
     border-radius: 3px;
-    border: 2px solid #016f07;
+    border: 2px solid #502200;
 }
 
-#agregarJugadorFutbol {
-    background-color: #02a30a;
+#agregarJugadorBasquet {
+    background-color: #d25b00;
+    border: 2px solid #502200;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -96,14 +93,14 @@
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
-#agregarJugador:active {
+#agregarJugadorBasquet:active {
     transform: translateY(1px);
 }
 
 /* Estilos para los divs de los jugadores */
-.jugadorFutbol {
+.jugadorBasquet {
     display: flex;
-    background-color: #243890;
+    background-color: #2e1800;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -111,13 +108,13 @@
     /* position: relative; */
 }
 
-.jugadorFutbol span {
+.jugadorBasquet span {
     text-transform: uppercase;
     margin-right: 10px;
 }
 
 /* Estilos para el botón de eliminar (la cruz "X") */
-.jugadorFutbol .eliminar {
+.jugadorBasquet .eliminar {
     background-color: #ff2c2c;
     color: white;
     border: none;
@@ -128,15 +125,15 @@
     line-height: 1;
 }
 
-.jugadorFutbol .eliminar:hover {
+.jugadorBasquet .eliminar:hover {
     background-color: #c02020;
     color: white;
 }
 
-.btn-sorteo-futbol {
+.btn-sorteo-basquet {
     color: white;
-    background-color: #02a30a;
-    border: 2px solid #016f07;
+    background-color: #dd6000;
+    border: 2px solid #813600;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -145,11 +142,11 @@
     box-shadow: 4px 5px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
-.btn-sorteo-futbol:active {
+.btn-sorteo-basquet:active {
     transform: translateY(3px);
 }
 
-#equiposFutbol {
+#equiposBasquet {
     background-image: url(https://c.wallhere.com/photos/f1/03/1920x1080_px_grass_Soccer_Pitches-719779.jpg!d);
     background-position: center center;
     background-repeat: no-repeat;
@@ -165,13 +162,21 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 1)
 }
 
-.equiposSorteados ul {
+.equiposSorteadosBasquet ul {
     list-style-type: none;
     font-size: 16px;
     padding: 0;
 }
 
-#copiarContenidoFutbol {
+.listaEquipo1Basquet,
+.listaEquipo2Basquet {
+    list-style-type: none;
+    font-size: 16px;
+    padding: 0;
+}
+
+
+#copiarContenidoBasquet {
     position: absolute;
     bottom: 2px;
     right: auto;
@@ -183,18 +188,18 @@
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
-#copiarContenidoFutbol:hover {
+#copiarContenidoBasquet:hover {
     background-color: #484848;
 }
 
-#inicia {
+#iniciaBasquet {
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
     color: #003603;
 }
 
-.nombreJugadoresFutbol {
+.nombreJugadoresBasquet {
     display: grid;
     place-items: center;
 }

@@ -40,14 +40,14 @@ document.getElementById('sortearEquiposBasquet').addEventListener('click', funct
 
     const maxJugadoresBasquet = maxJugadoresPorEquipoBasquet[tipoPartidoSeleccionadoBasquet];
     if (listaJugadoresBasquet.length < maxJugadoresBasquet * 2) {
-        alert(`Necesitas al menos ${maxJugadoresBasquet * 2} jugadores para un partido de F${tipoPartidoSeleccionadoBasquet}.`);
+        alert(`Necesitas al menos ${maxJugadoresBasquet * 2} jugadores para un partido de ${tipoPartidoSeleccionadoBasquet / 2}V${tipoPartidoSeleccionadoBasquet / 2}.`);
         return;
     }
     sortearEquiposBasquet(tipoPartidoSeleccionadoBasquet);
     definirInicioPartidoBasquet();
 });
 
-// Actualizar lista de jugadores con el nuevo diseño
+// Actualizar lista de jugadores
 function actualizarListaJugadoresBasquet() {
     const listaElementBasquet = document.getElementById('listaJugadoresBasquet');
     listaElementBasquet.innerHTML = ''; // Limpiar la lista actual
@@ -129,7 +129,7 @@ function mostrarEquiposBasquet(equipo1Basquet, equipo2Basquet) {
         listaEquipo1Basquet.appendChild(liBasquet);
     });
 
-    equipo2Basquet.forEach(jugadorBasquet => {
+    equipo2Basquet.forEach(jugador => {
         const li = document.createElement('li');
         li.textContent = jugadorBasquet;
         listaEquipo2Basquet.appendChild(liBasquet);
@@ -192,7 +192,7 @@ function mostrarEquiposBasquet(equipo1Basquet, equipo2Basquet) {
 botonParaCopiarBasquet.addEventListener('click', function () {
     const equipo1Basquet = document.getElementById('listaEquipo1Basquet').innerText;
     const equipo2Basquet = document.getElementById('listaEquipo2Basquet').innerText;
-    const textoAIniciarBasquet = document.getElementById('inicia').innerText;
+    const textoAIniciarBasquet = document.getElementById('iniciaBasquet').innerText;
 
     const textoCompletoBasquet = `Equipo 1:\n${equipo1Basquet}\n\nEquipo 2:\n${equipo2Basquet}\n\n${textoAIniciarBasquet}`;
 

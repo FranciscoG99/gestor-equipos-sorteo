@@ -157,3 +157,64 @@ function definirInicioPartido() {
     const equipoInicial = Math.random() < 0.5 ? 'Equipo 1' : 'Equipo 2';
     document.getElementById('inicia').textContent = `El ${equipoInicial} inicia el partido.`;
 }
+
+// ESTO ES NUEVO Y A CHEQUEAR. BOTONES PARA AGREGAR Y CARGAR JUGADORES
+// Lista de jugadores
+let jugadoresFutbol = [];
+
+// Función para agregar un jugador
+document.getElementById('agregarJugadorFutbol').addEventListener('click', function () {
+    const inputJugador = document.getElementById('jugadorFutbol');
+    const nombreJugador = inputJugador.value.trim();
+
+    if (nombreJugador !== '') {
+        jugadoresFutbol.push(nombreJugador);
+        mostrarJugadores();
+        inputJugador.value = ''; // Limpiar el campo de entrada
+        inputJugador.focus(); // Focalizar nuevamente en el input
+    }
+});
+
+// Mostrar jugadores en la lista
+function mostrarJugadores() {
+    const listaJugadoresFutbol = document.getElementById('listaJugadoresFutbol');
+    listaJugadoresFutbol.innerHTML = '';
+
+    jugadoresFutbol.forEach((jugador, index) => {
+        const li = document.createElement('li');
+        li.textContent = jugador;
+        // Botón para eliminar jugador
+        const botonEliminar = document.createElement('button');
+        botonEliminar.textContent = 'X';
+        botonEliminar.addEventListener('click', () => {
+            jugadoresFutbol.splice(index, 1); // Eliminar jugador de la lista
+            mostrarJugadores(); // Actualizar la lista en pantalla
+        });
+
+        li.appendChild(botonEliminar);
+        listaJugadoresFutbol.appendChild(li);
+    });
+}
+
+// Guardar jugadores en localStorage
+document.getElementById('guardarJugadoresFutbol').addEventListener('click', function () {
+    if (jugadoresFutbol.length > 0) {
+        localStorage.setItem('jugadoresFutbol', JSON.stringify(jugadoresFutbol));
+        alert('Lista de jugadores guardada correctamente.');
+    } else {
+        alert('No hay jugadores para guardar.');
+    }
+});
+
+// Cargar jugadores guardados de localStorage
+document.getElementById('cargarJugadoresFutbol').addEventListener('click', function () {
+    const jugadoresGuardados = localStorage.getItem('jugadoresFutbol');
+
+    if (jugadoresGuardados) {
+        jugadoresFutbol = JSON.parse(jugadoresGuardados);
+        mostrarJugadores(); // Actualizar la lista en pantalla
+        alert('Lista de jugadores cargada correctamente.');
+    } else {
+        alert('No hay jugadores guardados.');
+    }
+});

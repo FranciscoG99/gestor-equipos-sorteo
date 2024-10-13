@@ -100,6 +100,22 @@
     transform: translateY(1px);
 }
 
+.guardarCargarJugadores {
+    display: flex;
+    margin: 3px;
+}
+
+#guardarJugadoresFutbol,
+#cargarJugadoresFutbol {
+    background-color: #02a30a;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
 .btn-limpiar-futbol {
     background-color: #a50e0e;
     color: white;

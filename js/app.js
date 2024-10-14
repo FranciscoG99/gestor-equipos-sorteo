@@ -72,11 +72,24 @@ function actualizarListaJugadores() {
     });
 }
 
-// Limpiar lista de jugadores
+// Limpiar lista de jugadores, equipos y quien inicia el partido
 document.getElementById('limpiar-jugadores').addEventListener('click', function () {
-    listaJugadores.length = 0; // Vacía el array
+    // Limpiar la lista de jugadores
+    listaJugadores.length = 0; // Vacía el array de jugadores
     actualizarListaJugadores(); // Actualiza la lista visualmente
-    actualizarBotonLimpiar(); // Ocultar el botón de limpiar
+
+    // Limpiar las listas de los equipos
+    document.getElementById('listaEquipo1Futbol').innerHTML = ''; // Limpiar equipo 1
+    document.getElementById('listaEquipo2Futbol').innerHTML = ''; // Limpiar equipo 2
+
+    // Ocultar el botón de copiar equipos
+    document.getElementById('copiarContenidoFutbol').style.display = 'none';
+
+    // Limpiar quien inicia el partido
+    document.getElementById('inicia').textContent = '';
+
+    // Ocultar el botón de limpiar si ya no hay jugadores
+    actualizarBotonLimpiar();
 });
 
 // Eliminar jugador de la lista
@@ -85,6 +98,27 @@ function eliminarJugador(index) {
     actualizarListaJugadores();
     actualizarBotonLimpiar(); // Actualizar visibilidad del botón
 }
+
+// Limpiar lista de jugadores, equipos y quien inicia el partido
+document.getElementById('limpiar-jugadores').addEventListener('click', function () {
+    // Limpiar la lista de jugadores
+    listaJugadores.length = 0; // Vacía el array de jugadores
+    actualizarListaJugadores(); // Actualiza la lista visualmente
+
+    // Limpiar las listas de los equipos
+    document.getElementById('listaEquipo1Futbol').innerHTML = ''; // Limpiar equipo 1
+    document.getElementById('listaEquipo2Futbol').innerHTML = ''; // Limpiar equipo 2
+
+    // Ocultar el botón de copiar equipos
+    document.getElementById('copiarContenidoFutbol').style.display = 'none';
+
+    // Limpiar quien inicia el partido
+    document.getElementById('inicia').textContent = '';
+
+    // Ocultar el botón de limpiar si ya no hay jugadores
+    actualizarBotonLimpiar();
+});
+
 
 // Sortear equipos
 document.getElementById('sortearEquiposFutbol').addEventListener('click', function () {

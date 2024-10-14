@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .eliminar{
+            background-color: darkred;
+            color: white;
+        }
+        .eliminar:hover{
+            background-color: #ab0000;
+        }
+        .cancelar{
+            background-color: #888888;
+            color: white;
+        }
+        .cancelar:hover{
+            background-color: #a0a0a0;
+        }
+        .cargar{
+            background-color: #0e8d00;
+            color: white;
+        }
+        .cargar:hover{
+            background-color: #10a100;
+        }
+        .contenedor{
+            background-color: #5b5b5b;
+            color: white;
+            display: grid;
+            place-items: center;
+            margin: 15% auto;
+            padding: 10px;
+            border: 3px solid rgb(0, 77, 0);
+            max-width: 500px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contenedor p{
+            font-size: 25px;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+
+        .ulContenedor{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contenedorSpan{
+            display: flex;
+            background-color: #243890;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px;           
+            cursor: pointer;
+        }
+        .contenedorSpan:hover{
+            background-color:  #404f8f;
+        }
+
+        .contenedorSpan .seleccionarJugador{
+            background-color: #09ba12;
+            color: white;
+            margin-left: 5px;
+            border: none;
+            padding: 0 5px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .eliminar, .cancelar, .cargar{
+        padding: 6px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        .ulContenedor{
+            max-height: 240px;
+            overflow-y: auto;
+        }
+        /* Estilo para la barra de desplazamiento */
+        ::-webkit-scrollbar {
+            width: 10px;
+            /* Ancho de la barra */
+            
+        }
+        
+        /* Estilo para la parte móvil de la barra (el "thumb") */
+        ::-webkit-scrollbar-thumb {
+            background-color: #006a05;
+            border-radius: 10px;
+        }
+        
+        /* Estilo cuando el thumb está siendo presionado o en "hover" */
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #007d06;
+        }
+        
+        /* Estilo para el track (el fondo de la barra de desplazamiento) */
+        ::-webkit-scrollbar-track {
+            background-color: #323232;
+            border-radius: 10px;
+
+        }
+
+        /* Opcional: ocultar la barra de desplazamiento si no es necesario */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p>Seleciona los Jugadores:</p>
+        <ul class="ulContenedor">
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+            <div class="contenedorSpan">
+                <span>Jugador 1</span>
+                <button class="seleccionarJugador">✔</button>
+            </div>
+
+        </ul>
+        <div class="botones">
+            <button class="eliminar">Eliminar</button>
+            <button class="cancelar">Cancelar</button>
+            <button class="cargar">Cargar</button>
+        </div>
+    </div>
+</body>
+</html>
